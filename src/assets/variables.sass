@@ -1,0 +1,69 @@
+//fonts
+@import "../assets/font/fonts"
+$norms200: 'Norms 200'
+$norms300: 'Norms 300'
+$norms400: 'Norms 400'
+$norms700: 'Norms 700'
+//colors
+$main-bg-color: #F8F8F8
+$text-black: #1F1F25
+$text-grey: #79818C
+$bg-btn-grey: #F1F5F9
+$main-yellow: #FFD400
+
+$lightGreen: #DDFFE2
+$darkGreen: #56B77F
+
+$lightOrange: #FFF7F2
+$darkOrange: #F2994A
+
+$lightViolet: #E1E0FC
+$darkViolet: #9796D0
+
+$blue: #367EE7
+$white: #ffffff
+
+$border-color: #D8D8D8
+//components
+@mixin border 
+	background: $white
+	border: 1px solid $border-color
+	box-sizing: border-box
+
+@mixin borderCard 
+	@include border
+	border-radius: 10px
+
+@mixin borderNumRooms 
+	@include border
+	border-radius: 40px 
+
+@mixin borderInputs
+	@include border
+	border-radius:8px
+
+@mixin btn 
+	border-radius: 8px
+	p 
+		margin: 0px!important
+
+@mixin btn-custom-grey 
+	@include btn
+	background-color: $bg-btn-grey
+
+@mixin btn-custom-yellow 
+	@include btn
+	background-color: $main-yellow
+	
+@mixin title-grey
+	font-family: $norms300
+	color: $text-grey
+	font-size: 14px
+	line-height: 16.1px
+
+@mixin divide-line 
+	background-color: $text-grey
+	width: 100%
+	height: 1px
+	margin-top: 12px
+	opacity: 40%
